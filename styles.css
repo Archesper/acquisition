@@ -1,6 +1,7 @@
 body {
   background-color: #050505;
   box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 nav {
@@ -24,13 +25,15 @@ nav > button {
 nav > button:hover, .active {
   background-color: rgb(158, 158, 158);
   color: rgb(29, 29, 29);
-  transition: 0.3s;
+  font-weight: bold;
+  transition: 0.4s;
 }
 
 .home_icon {
   /* margin-right: auto; */
   position: absolute;
   left: 5px;
+  cursor: pointer;
 }
 .home_icon:hover {
   width: 27px;

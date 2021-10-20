@@ -1,0 +1,38 @@
+body {
+  background-color: #050505;
+  box-sizing: border-box;
+}
+
+nav {
+  min-height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1%;
+  background-color: #F71735;
+  align-items: center;
+}
+nav > button {
+  background-color: rgb(95, 95, 95);
+  color: rgba(255, 255, 255, 0.74);
+  padding: 7px;
+  border-radius: 9%;
+  border: none;
+  min-width: 10%;
+  cursor: pointer;
+}
+
+nav > button:hover, .active {
+  background-color: rgb(158, 158, 158);
+  color: rgb(29, 29, 29);
+  transition: 0.3s;
+}
+
+.home_icon {
+  /* margin-right: auto; */
+  position: absolute;
+  left: 5px;
+}
+.home_icon:hover {
+  width: 27px;
+  color: white;
+}

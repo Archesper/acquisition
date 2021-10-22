@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 body {
+  color: white;
   background-color: #050505;
   box-sizing: border-box;
-  font-family: 'Times New Roman', Times, serif;
 }
-
 nav {
   min-height: 40px;
   display: flex;
@@ -20,6 +21,7 @@ nav > button {
   border: none;
   min-width: 10%;
   cursor: pointer;
+  font-family: 'Lato', sans-serif;
 }
 
 nav > button:hover, .active {

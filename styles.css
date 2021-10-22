@@ -1,7 +1,7 @@
 body {
   background-color: #050505;
   box-sizing: border-box;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 nav {
@@ -16,7 +16,7 @@ nav > button {
   background-color: rgb(95, 95, 95);
   color: rgba(255, 255, 255, 0.74);
   padding: 7px;
-  border-radius: 9%;
+  border-radius: 5px;
   border: none;
   min-width: 10%;
   cursor: pointer;
@@ -38,4 +38,29 @@ nav > button:hover, .active {
 .home_icon:hover {
   width: 27px;
   color: white;
+}
+
+.home_button {
+  display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  .home_button {
+    display: inline-block;
+  }
+  .home_icon {
+    display: none;
+  }
+  nav {
+    justify-content: flex-start;
+    align-items: normal;
+    padding: 0;
+  }
+  nav > button {
+    border-radius: 0;
+    border-right: 1px solid black;
+  }
+  button:nth-child(5) {
+    border: none;
+  }
 }

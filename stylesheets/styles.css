@@ -5,6 +5,9 @@ body {
   background-color: #050505;
   box-sizing: border-box;
 }
+
+/* Navbar styles */
+
 nav {
   min-height: 40px;
   display: flex;
@@ -32,7 +35,6 @@ nav > button:hover, .active {
 }
 
 .home_icon {
-  /* margin-right: auto; */
   position: absolute;
   left: 5px;
   cursor: pointer;
@@ -46,6 +48,7 @@ nav > button:hover, .active {
   display: none;
 }
 
+/* Navbar styles for larger screens */
 @media only screen and (min-width: 1200px) {
   .home_button {
     display: inline-block;
@@ -62,7 +65,7 @@ nav > button:hover, .active {
     border-radius: 0;
     border-right: 1px solid black;
   }
-  button:nth-child(5) {
+  nav > button:nth-child(6) {
     border: none;
   }
 }

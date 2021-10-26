@@ -1,0 +1,77 @@
+main {
+  margin-top: 20px;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  font-family: Lato, sans-serif;
+}
+
+main > p {
+  text-align: center;
+  padding: 5px;
+}
+main > h2 {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+/* Introductory part styles */
+main > h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: gray;
+}
+
+#intro-text {
+  animation: appear 1.5s;
+}
+
+@keyframes appear {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+#logos {
+  display: flex;
+  gap: 10px;
+}
+#logos > img {
+  height: 200px;
+  width: 33%;
+}
+
+/* Planning part styles */
+main > h3 {
+  font-size: 1.3rem;
+  color: rgb(163, 85, 85);
+  text-decoration: underline;
+  align-self: flex-start;
+}
+
+.planning {
+  align-self: flex-start;
+  list-style: square inside none;
+  font-size: 1.1rem;
+}
+
+.planning > li {
+  margin: 10px 0;
+}
+
+/* Adujstments to make introductory paragraph look better on larger screens */
+@media only screen and (min-width: 768px) {
+  main > p {
+    width: 70%;
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main > p {
+    width: 50%;
+    font-size: 1.2rem;
+  }
+}

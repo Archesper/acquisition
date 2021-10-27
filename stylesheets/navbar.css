@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-body {
-  color: white;
-  background-color: #050505;
-  box-sizing: border-box;
-}
-
 /* Navbar styles */
 
 nav {

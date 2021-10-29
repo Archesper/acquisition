@@ -3,6 +3,11 @@
 /* Navbar styles */
 
 nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* This line prevents pictures from stacking on the navbar */
+  z-index: 1; 
   min-height: 40px;
   display: flex;
   justify-content: space-evenly;

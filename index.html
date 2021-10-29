@@ -11,15 +11,15 @@
 
 <body>
   <nav>
-    <img onclick="window.location.href = 'index.html';" class="home_icon" src="assets/home_icon.png" />
-    <button onclick="window.location.href = 'index.html';" class="home_button active">Home</button>
-    <button onclick="window.location.href = 'history.html';">History</button>
-    <button onclick="window.location.href = 'planning.html';">Planning</button>
-    <button onclick="window.location.href = 'best_moments.html';">Best Moments</button>
-    <button onclick="window.location.href = 'faq.html';">FAQ</button>
+    <img data-target='home' class="home_icon" src="assets/home_icon.png" />
+    <button data-target='home' class="home_button active">Home</button>
+    <button data-target="history">History</button>
+    <button data-target="planning">Planning</button>
+    <button data-target='best_moments'>Best Moments</button>
+    <button data-target='faq'>FAQ</button>
   </nav>
   <main>
-    <h1>ACQUISITION DAY</h1>
+    <h1 id="home">ACQUISITION DAY</h1>
     <p id="intro-text">This is a presentation website for ENSAM CASA's "Acquisition day", a yearly event which's goal is
       to
       encourage engineering students to innovate by taking on technological projects of their own.</p>
@@ -28,7 +28,7 @@
       <img src="assets/logo/ensam_logo.png" alt="ENSAM CASA">
       <img src="assets/logo/mechatronics_logo.png" alt="MECHATRONICS CLUB">
     </div>
-    <h2>History:</h2>
+    <h2 id="history">History:</h2>
     <p>
       Acquisition day is a yearly event organized at ENSAM CASA by the connected objects and
       intelligent systems assocation with the Arts&Crafts Mechatronics club under the supervision
@@ -42,7 +42,7 @@
       It is also an opportunity to help students concretize their knowledge, and better their know-how
       and soft skills.
     </p>
-    <h2>Planning:</h2>
+    <h2 id="planning">Planning:</h2>
     <h3>Day 1: Semi-finals:</h3>
     <ol class="planning">
       <li>9:00 AM: Opening ceremony</li>
@@ -62,9 +62,9 @@
       <li>4:00 PM: Jury's deliberation</li>
       <li>5:00 PM: Awards Ceremony</li>
     </ol>
-    <h2>Best Moments:</h2>
+    <h2 id="best_moments">Best Moments:</h2>
     <p class="subheader">Here are some shots from past events: ( Click to view full size! )</p>
-    <div id="best_moments">
+    <div id="best_shots">
       <img src="assets/photos/shot1.jpeg">
       <img src="assets/photos/shot2.jpeg">
       <img src="assets/photos/shot3.jpeg">

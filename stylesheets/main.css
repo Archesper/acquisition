@@ -7,7 +7,7 @@ body {
 }
 
 main {
-  margin-top: 20px;
+  margin-top: 50px;
   padding: 10px 50px;
   display: flex;
   flex-direction: column;
@@ -72,21 +72,21 @@ main > h3 {
 
 /* Best Moments section styles */
 
-#best_moments {
+#best_shots {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
 }
 
-#best_moments > img {
+#best_shots > img {
   width: 40%;
   /* filter:hue-rotate(100) */
   opacity: 0.8;
   border-radius: 10px;
 }
  
-#best_moments > img:hover {
+#best_shots > img:hover {
   cursor: pointer;
   opacity: 1;
   border: 1px solid red;

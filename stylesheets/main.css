@@ -99,11 +99,19 @@ main > h3 {
   font-size: 0.95rem;
 }
 
-/* Adujstments to make section paragraphs look better on larger screens */
 @media only screen and (min-width: 768px) {
+  /* Adujstments to make section paragraphs look better on larger screens */
   main > p {
     width: 70%;
     font-size: 1.1rem;
+  }
+  /* Make each image narrower on wider screens ( >= tablets ) to fit more images per row */
+  #best_moments > img {
+    width: 30%;
+  }
+  /* Make logos smaller on larger screens */
+  #logos > img {
+    width: 20%;
   }
 }
 
@@ -111,19 +119,5 @@ main > h3 {
   main > p {
     width: 50%;
     font-size: 1.2rem;
-  }
-}
-
-/* Make each image narrower on wider screens ( >= tablets ) to fit more images per row */
-@media only screen and (min-width: 768px) {
-  #best_moments > img {
-    width: 30%;
-  }
-}
-
-/* Make logos smaller on larger screens */
-@media only screen and (min-width: 768px) {
-  #logos > img {
-    width: 20%;
   }
 }

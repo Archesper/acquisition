@@ -3,6 +3,7 @@ best_moments_shots.forEach((shot) => shot.addEventListener('click', function() {
   window.open(shot.src)
 }))
 
+// Current bug: when page is refreshed with scroll being at a value besides zero, values are somewhat off
 const section_coordinates = {
   'home' : offset(document.getElementById('home')).top,
   'history' : offset(document.getElementById('history')).top,
@@ -10,6 +11,8 @@ const section_coordinates = {
   'best_moments' : offset(document.getElementById('best_moments')).top
 }
 
+// offset values like -60 and -90 are used because to account for fixed navbar being taken out of document's flow
+// and thus section headers sliding under it after scrolling
 function navScroll(e) {
   target_coordinates = section_coordinates[e.target.dataset.target]
   window.scrollTo({

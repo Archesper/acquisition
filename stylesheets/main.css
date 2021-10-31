@@ -16,6 +16,11 @@ main {
   font-family: Lato, sans-serif;
 }
 
+main > h1, h2, h3 { /* Flex properties reduce width which causes problems with headers on smaller screens */
+  width: 100%;
+  text-align: center;
+}
+
 main > p {
   text-align: center;
   padding: 5px;
@@ -27,6 +32,8 @@ main > h2 {
 
 /* Introductory part styles */
 main > h1 {
+  width: 100%;
+  text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
   text-decoration: underline;
@@ -55,10 +62,11 @@ main > h1 {
 
 /* Planning part styles */
 main > h3 {
+  width: 100%;
   font-size: 1.3rem;
   color: rgb(218, 114, 114);
   text-decoration: underline;
-  align-self: flex-start;
+  text-align: left;
 }
 
 .planning {

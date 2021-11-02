@@ -6,7 +6,7 @@ best_moments_shots.forEach((shot) => shot.addEventListener('click', function() {
 }))
 
 // Current bug: when page is refreshed, the values coordinates values change (which isn't supposed to happen)
-// the whole dynamic navigation is thrown off
+// the whole dynamic navigation is thrown off. A hard refresh ( CTRL + F5 ) seems to solve it
 // Changing to jquery's offset method did not fix it, however it did make code simpler
 const section_coordinates = {
   'home' : $("#home").offset().top,

@@ -7,12 +7,13 @@ best_moments_shots.forEach((shot) => shot.addEventListener('click', function() {
 
 // Current bug: when page is refreshed, the values coordinates values change (which isn't supposed to happen)
 // the whole dynamic navigation is thrown off
+// Changing to jquery's offset method did not fix it, however it did make code simpler
 const section_coordinates = {
-  'home' : offset(document.getElementById('home')).top,
-  'history' : offset(document.getElementById('history')).top,
-  'planning' : offset(document.getElementById('planning')).top,
-  'best_moments' : offset(document.getElementById('best_moments')).top,
-  'FAQ' : offset(document.getElementById('FAQ')).top
+  'home' : $("#home").offset().top,
+  'history' : $("#history").offset().top,
+  'planning' : $("#planning").offset().top,
+  'best_moments' : $("#best_moments").offset().top,
+  'FAQ' : $("#FAQ").offset().top
 }
 
 // - nav.offsetHeight is used to account for fixed navbar being taken out of document's flow
@@ -51,17 +52,5 @@ function dynamicNavbarUpdate() {
   }
 }
 
-function offset(ele) {
-  // Get the top, left coordinates of the element
-  const rect = ele.getBoundingClientRect();
-
-  // Add the scroll postion to get the full distance from the element
-  // to the top, left sides of the document
-  const top = rect.top + document.body.scrollTop;
-  const left = rect.left + document.body.scrollLeft;
-  return { top: top, left: left }
-}
-
-document.addEventListener('DOMContentLoaded', () => {window.scrollTo(0,0)});
 document.querySelectorAll('nav > *').forEach((button) => button.addEventListener('click' , navScroll));
 document.addEventListener('scroll', dynamicNavbarUpdate);

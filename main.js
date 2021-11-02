@@ -5,8 +5,8 @@ best_moments_shots.forEach((shot) => shot.addEventListener('click', function() {
   window.open(shot.src)
 }))
 
-// Current bug: when page is refreshed with scroll being at a value besides zero, values are somewhat off
-// Kind of inconsistent in general
+// Current bug: when page is refreshed, the values coordinates values change (which isn't supposed to happen)
+// the whole dynamic navigation is thrown off
 const section_coordinates = {
   'home' : offset(document.getElementById('home')).top,
   'history' : offset(document.getElementById('history')).top,
@@ -15,7 +15,7 @@ const section_coordinates = {
   'FAQ' : offset(document.getElementById('FAQ')).top
 }
 
-// offset values like -60 and -nav.offsetHeight are used because to account for fixed navbar being taken out of document's flow
+// - nav.offsetHeight is used to account for fixed navbar being taken out of document's flow
 // and thus section headers sliding under it after scrolling
 function navScroll(e) {
   target_coordinates = section_coordinates[e.target.dataset.target]
@@ -52,7 +52,7 @@ function dynamicNavbarUpdate() {
 }
 
 function offset(ele) {
-    // Get the top, left coordinates of the element
+  // Get the top, left coordinates of the element
   const rect = ele.getBoundingClientRect();
 
   // Add the scroll postion to get the full distance from the element

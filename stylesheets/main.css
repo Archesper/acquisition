@@ -107,6 +107,38 @@ main > h3 {
   font-size: 0.95rem;
 }
 
+/* FAQ section styles */
+.answer, .question {
+  text-align: left;
+  font-size: 1.1rem;
+  padding: 5px;
+}
+
+.answer > span {
+  color: rgb(218, 114, 114);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.question {
+  color: rgb(180, 92, 92);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.QA {
+  width: 70%;
+  border: 4px dashed rgb(97, 53, 53);
+  padding: 10px;
+  margin: 10px;
+}
+
+/* To account for the fact that FAQ doesn't have enough content to be able to get scrolled past, add some empty space
+at the bottom of the page */
+#hacky-navbar-fix {
+  height: 600px;
+}
+
 @media only screen and (min-width: 768px) {
   /* Adujstments to make section paragraphs look better on larger screens */
   main > p {

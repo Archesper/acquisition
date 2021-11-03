@@ -136,7 +136,7 @@ main > h3 {
 /* To account for the fact that FAQ doesn't have enough content to be able to get scrolled past, add some empty space
 at the bottom of the page */
 #hacky-navbar-fix {
-  height: 600px;
+  height: 50vh;
 }
 
 @media only screen and (min-width: 768px) {

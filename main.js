@@ -21,12 +21,10 @@ const sections = {
 function navScroll(e) {
   target_coordinates = sections[e.target.dataset.target].offset().top
   window.scrollTo({
-    top: target_coordinates - nav.offsetHeight,
-    behavior: 'smooth'
+    top: target_coordinates - nav.offsetHeight + 5,
   })
 }
 
-// 
 function dynamicNavbarUpdate() {
   const currentScroll = window.scrollY
   const currentButton = document.querySelector('.active')

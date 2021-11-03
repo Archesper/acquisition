@@ -87,6 +87,6 @@ nav > button:hover, .active {
 
 @media only screen and (max-width: 768px) {
   nav > button {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }

@@ -26,6 +26,7 @@ function navScroll(e) {
   })
 }
 
+// 
 function dynamicNavbarUpdate() {
   const currentScroll = window.scrollY
   const currentButton = document.querySelector('.active')

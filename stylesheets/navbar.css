@@ -47,6 +47,18 @@ nav > button:hover, .active {
   display: none;
 }
 
+#language_button {
+  text-decoration: underline;
+  align-self: center;
+  font-family: 'Lato', sans-serif;
+  color: rgb(22, 22, 22);
+  cursor: pointer;
+}
+
+#language_button:hover {
+  text-decoration-style: double;
+}
+
 /* Navbar styles for larger screens */
 @media only screen and (min-width: 1200px) {
   .home_button {
@@ -67,10 +79,14 @@ nav > button:hover, .active {
   nav > button:nth-child(6) {
     border: none;
   }
+  #language_button {
+    margin-left: auto;
+    margin-right: 15px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   nav > button {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }

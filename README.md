@@ -1,5 +1,4 @@
 # ACQUISITION DAY
-# ACQUISITION DAY
 
 This is a presentation website made for [ENSAM CASA's](http://ensam-casa.ma/) Acquisition Day event.
 Some of the website's features:
